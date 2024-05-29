@@ -1,0 +1,401 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width" name="viewport">
+
+  <title>TPO</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/assets_mh/img/fevicon.png" rel="icon">
+  <link href="static/assets_mh/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet"> -->
+
+  <!-- Vendor CSS Files -->
+    <link href="static/assets_mh/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="static/assets_mh/vendor/aos/aos.css" rel="stylesheet">
+    <link href="static/assets_mh/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/assets_mh/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="static/assets_mh/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="static/assets_mh/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="static/assets_mh/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/assets_mh/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h6 class="logo me-auto"><a href="/">
+          <center>Placement Management System</center>
+        </a></h6>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="static/assets_mh/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="#about" class="nav-link-scrollto"><span>About</span></a></li>
+          <li><a href="{% url 'Help' %}">Help</a></li>
+          <li><a href="{% url 'contact' %}">Contact Us</a></li>
+          {% comment %} <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Login
+              <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="{% url 'login'  %}">Company login</a></li>
+              <li><a href="{% url 'student login' %}">Student login</a></li>
+            </ul>
+          </li>
+          {% endcomment %}
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <a href="{% url 'login_i' %}" target="_blank" class="get-started-btn">Get Started</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex justify-content-center align-items-center">
+    <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
+      <h1>Learning Today,<br>Leading Tomorrow</h1>
+      <a href="{% url 'login_i' %}" target="_blank" class="btn-get-started">Get Started</a>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <img src="static/assets_mh/img/dyp1.jpg" alt="" height="325px" width="100%">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+            <h3>ABOUT US</h3>
+            <p style="text-align: justify;font-size: 17px;">
+              DYP Group always wants their student to feel the campus as their home and they are never away from it.
+              Remembering this DYP campus provides world class infrastructure, well-equipped facility with a homely
+              atmosphere around.
+              <br>The campus of DYP colleges are spacious and polished where a student can indulge in intellectual
+              thinking with floating ideas, creativity and bringing their theories to practical implementation.
+              <br>The Training and Placement Cell is one of the integral part of our college. Training & Placement
+              activities are organized throughout the year with a view to prepare the students to appear the campus
+              recruitment process with confidence.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row" data-aos="zoom-in" data-aos-delay="100">
+          <h1 style="text-align: center;color: rgb(4, 8, 29);">Our Major Recruiters</h1>
+          <div class="col-lg-3 col-md-4">
+            <div class="icon-box">
+              <img src="static/assets_mh/img/company/google.png" height="30px" width="30px" alt="google">
+              <h3><a href="">&nbsp Google</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+            <div class="icon-box">
+              <img src="static/assets_mh/img/company/amazon.png" height="30px" width="30px" alt="Amazon">
+              <h3><a href="">&nbsp Amazon</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+            <div class="icon-box">
+              <img src="static/assets_mh/img/company/ibm.png" height="30px" width="30px" alt="IBM">
+              <h3><a href="">&nbsp IBM</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+            <div class="icon-box">
+              <img src="static/assets_mh/img/company/microsoft.png" height="30px" width="30px" alt="Microsoft">
+              <h3><a href="">&nbsp Microsoft</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <img src="static/assets_mh/img/company/veritas.png" height="30px" width="30px" alt="Veritas">
+              <h3><a href="">&nbsp Veritas</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <img src="static/assets_mh/img/company/accenture.png" height="30px" width="30px" alt="Accenture">
+              <h3><a href="">&nbsp Accenture</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <img src="static/assets_mh/img/company/capgemini.png" height="30px" width="30px" alt="Capgemini">
+              <h3><a href="">&nbsp Capgemini</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <img src="static/assets_mh/img/company/cognizant.jpeg" height="10px" width="30px" alt="Cognizant">
+              <h3><a href="">&nbsp Cognizant</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <img src="static/assets_mh/img/company/godrej1.png" height="30px" width="30px" alt="Godrej">
+              <h3><a href="">&nbsp Godrej</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <img src="static/assets_mh/img/company/Deshaw.png" height="10px" width="30px" alt="Deshaw">
+              <h3><a href="">&nbsp Deshaw</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <img src="static/assets_mh/img/company/mahindra.png" height="30px" width="30px" alt="Mahindra">
+              <h3><a href="">&nbsp Mahindra</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <img src="static/assets_mh/img/company/Tata_logo.svg.png" height="30px" width="30px" alt="TCS">
+              <h3><a href="">&nbsp TCS</a></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Features Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts section-bg">
+      <div class="container">
+
+        <div class="row counters">
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="526" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>Students Placed</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="58" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>Companies Visiting</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="45" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>Max Package(2022)</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="73" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>Placement %</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    
+    <!-- <section id="trainers" class="trainers">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="static/assets_mh/img/profile.jpg" alt="Ganesh" height="420px" width="400px">
+              <div class="member-content">
+                <h4>Ganesh Bhosale</h4>
+                <span>Web Development</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="static/assets_mh/img/vedant1.jpg" alt="Vedant" height="420px" width="400px">
+              <div class="member-content">
+                <h4>Vedant Patil</h4>
+                <span>CTO</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="static/assets_mh/img/abhi.jpg" alt="abhishek" height="420px" width="400px">
+              <div class="member-content">
+                <h4>Abhishek Dongre</h4>
+                <span>CEO</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="static/assets_mh/img/sanjana.jpg" alt="sanjana" height="420px" width="400px">
+              <div class="member-content">
+                <h4>Sanjana Patel</h4>
+                <span>Content Creator</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="static/assets_mh/img/aastha.jpg" alt="aastha" height="420px" width="400px">
+              <div class="member-content">
+                <h4>Aastha Chadankar</h4>
+                <span>Designer</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-md-6 footer-contact">
+            <h3 style="color: white">Training And Placement CELL </h3>
+            <h5 style="color: white;">Address:- </h5>
+            <p style="color: white;">
+              Dr. D. Y. Patil Institute of Engineering, Management And Research, D. Y. Patil Educational Complex, Sector
+              29, Nigidi Pradhikaran, Akurdi, Pune 411044.
+              <br><br>
+              <strong>Phone:</strong> +91-20-27654470<br><br>
+              <strong>Email:</strong> dyppeca@gmail.com<br><br>
+              <strong> TPO Email:</strong> tpo@dypiemr.ac.in<br>
+            </p>
+          </div>
+
+          <div class="col-lg-6 col-md-6 footer-links">
+            <h3 style="color: white;">Useful Links</h3>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="/" style="color: white;">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i><a href="#about" style="color: white;"
+                  class="nav-link-scrollto"><span>About</span></a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'contact' %}" style="color: white;">Contact Us</a>
+              </li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'Help' %}" style="color: white;">Help</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>TEAM</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by Team</a>
+        </div>
+      </div>
+      <div class="social-links text-center pt-3 pt-md-0">
+        <a href="https://twitter.com/DYPIEMR1" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.facebook.com/dypiemrakurdi/" target="_blank" class="facebook"><i
+            class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/dypiemr3/" target="_blank" class="instagram"><i
+            class="bx bxl-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/dypiemr-akurdi-b522771a6/" target="_blank" class="linkedin"><i
+            class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <!-- <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a> -->
+
+  <!-- Vendor JS Files -->
+  <script src="static/assets_mh/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="static/assets_mh/vendor/aos/aos.js"></script>
+  <script src="static/assets_mh/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/assets_mh/vendor/swiper/swiper-bundle.min.js"></script>
+
+
+  <!-- Template Main JS File -->
+  <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/639897f7b0d6371309d439ca/1h556hip5';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+  <script src="static/assets_mh/js/main.js"></script>
+
+</body>
+
+</html>

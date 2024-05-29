@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    
+     
+    <link href="/static/assets_g/css/style.css" rel="stylesheet">
+
+
+    <!-- Vendor CSS Files -->
+  <link href="/static/assets_g/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/static/assets_g/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/assets_g/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/static/assets_g/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/static/assets_g/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/static/assets_g/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+</head>
+<body>
+      <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+
+    <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="/static/assets_g/img/hero.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index1.html">Ganesh Bhosale</a></h1>
+         
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="{% url 'student_home' %}" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          
+          <li><a href="{% url 'companies1' %}"><i class="bx bx-envelope"></i> <span>Company and Recruitment <br>Information</span></a></li>
+          <li><a href="{% url 'courses' %}"><i class="bi bi-book-fill"></i><span>Courses</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bi bi-person-lines-fill"></i><span>Contact</span></a></li>
+          <li><a href="{% url 'logout' %}"><i class="bi bi-box-arrow-right"></i><span>Logout</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+    
+    <div class="flexbox" style="padding-left: 17%;padding-right: -10%;">
+        <div class="card">
+            <img src="/static/assets_g/img/stock market.jpeg " class="card-img" alt="">
+            <h3>Stock Market for Beginners</h3>
+            <p>  “I will tell you how to become rich. Close the doors. Be fearful when others are greedy. Be greedy when others are fearful.”.</p>
+            <button class="apply"   >Apply now</button>
+        </div>
+        <div class="card">
+            <img src="/static/assets_g/img/interview.jpeg" class="card-img" alt="">
+            <h3>Interveiw Skills</h3>
+            <p>
+                Interviewing skills are the emotional and tactical techniques that make job seekers more effective when interviewing for a new position.</p>
+            <button class="apply"  >Apply now</button>
+        </div>
+        <div class="card">
+            <img src="/static/assets_g/img/web design.jpeg" class="card-img" alt="">
+            <h3> Web development</h3>
+            <p>
+              Web development can range from developing a single static page of plain text to complex web applications and social network services.
+            </p>
+            <button class="apply"  >Apply now</button>
+        </div>
+        <div class="card">
+            <img src="/static/assets_g/img/communication skill.png" class="card-img" alt="">
+            <h3>Communication Skills</h3>
+            <p> Excellent communication doesn’t just happen naturally. It is a product of process, skill, climate, relationship and hard work..</p>
+            <button class="apply"  >Apply now</button>
+        </div>
+        <div class="card">
+            <img src="/static/assets_g/img/harwareadn networking.jpeg " class="card-img" alt="">
+            <h3>Hardware And Networking</h3>
+            <p> Hardware refers to the actual physical parts used in building a network. Network hardware uses cables to connect the different devices .</p>
+            <button class="apply" >Apply now</button>
+        </div>
+        <div class="card">
+            <img src="/static/assets_g/img/apptitude.png" class="card-img" alt="">
+            <h3>Aptitude Course</h3>
+            <p> Aptitude tests assume that individuals have inherent strengths and weaknesses and have a natural inclination toward success or failure</p>
+            <button class=" apply">Apply now</button>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

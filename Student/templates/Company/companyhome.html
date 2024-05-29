@@ -1,0 +1,368 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Company Page</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="/static/assetsv1/img/companyfevicon.jpeg" rel="icon">
+  <link href="/static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="/static/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="/static/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/static/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="/static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="/static/assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h6 class="logo me-auto">
+          <center>Placement Management System</center>
+        </a></h6>
+     
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a href="{% url 'Homepage'  %}">Home</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Student's Info
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="{% url 'student_info' %}">Computer Engineering</a></li>
+              <li><a href="#">AIDS Engineering</a></li>
+              <li><a href="#">Civil Engineering</a></li>
+              <li><a href="#">Mechanical Engineering</a></li>
+              <li><a href="#">ENTC Engineering</a></li>
+            </ul>
+          </li>
+          <li><a href="{% url 'Help1' %}">Help</a></li>
+          <li><a href="{% url 'contact1' %}">Contact Us</a></li>
+          <li><a href="{% url 'logout'  %}">Logout</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section>
+    <div class="container-fixed">
+      <div class="col-lg-12 col-md-12 col-xl-12">
+        <div class="row" style="padding-top: 3%;">
+          <div class="col-lg-4 col-md-4 col-xl-4"></div>
+          <div class="col-lg-4 col-md-4 col-xl-4">
+            <marquee direction="right"><h4 style="text-align: center;"><strong>Welcome</strong>&nbsp;<span>{{user.first_name}}&nbsp;{{user.last_name}}</span></h4></marquee>
+          </div>
+          <div class="col-lg-4 col-md-4 col-xl-4"></div>
+        </div>
+      </div>
+      <div class="col-lg-12 col-md-12 col-xl-12">
+        <div class="row" style="padding-top: 2%;">
+          <img src="/static/assetsv1/img/collegephoto.jpeg" height="500px" width="100%">
+          
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <section>
+      <div class="container-fixed">
+        <div class="row gy-4">
+          <!-- Description started----------------------------------->
+          <div>
+            <div class="col-lg-12 col-md-12 col-xl-12">
+              <div class="row">
+                <h2 style="color: #0e1d34;text-align: center;"><b>TPO OVERVIEW</b></h2>
+                <hr>
+
+                <div class="col-lg-8 col-md-8 col-xl-8" data-aos="fade-up" data-aos-delay="500">
+                  <p
+                    style="text-align: justify; border: 1px solid black;border-radius: 10px; padding: 3%; background-color: #1b3762; color: rgb(252, 252, 251);">
+                    The Training and Placement Cell is an integral part of this college. Training & Placement activities
+                    are organized throughout the year with a view to prepare the prospective learners for the campus
+                    selection programs. It is heartening to state that reputed industries across the country visit this
+                    college regularly for campus recruitment programs however, cell maintains good rapport with all
+                    industries for effective recruitment. In order to enhance the employability quotient of the students
+                    as demanded by industry, the Training & Placement cell provides the much needed training to the
+                    students to hone their employability skills. These training programs give the students tips on how
+                    to crack aptitude, group discussion, interview skills and resume preparation. The cell also educates
+                    the students with career opportunities in different areas such as Public Sector, Armed forces and
+                    Government Sector services by conducting guest lecture regularly.</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-xl-4" d-flex align-items-stretch mt-4 data-aos="zoom-in"
+                  data-aos-delay="500">
+                  <img src="/static/assetsv1/img/Placement-Graph-_2.jpg" height="300px" style="margin-top:5% ;" width="100%">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-12 col-md-12 col-xl-12" style="margin-top: 5%;">
+            <div class="row">
+              <h2 style="color: #0e1d34; text-align: center;"><b>OBJECTIVE OF THE T&P CELL</b></h2>
+              <hr>
+              <div class="col-lg-4 col-md-4 col-xl-4" d-flex align-items-stretch mt-4 data-aos="zoom-in"
+                data-aos-delay="500">
+                <img src="/static/assetsv1/img/piechartplacement.jpg" width="100%" height="300px" style="margin-top:5% ;">
+              </div>
+              <div class="col-lg-8 col-md-8 col-xl-8" data-aos="fade-up" data-aos-delay="500">
+                <p
+                  style="text-align: justify;border: 1px solid black;border-radius: 10px; padding: 3%; background-color: #1b3762; color: rgb(252, 252, 251);">
+                  1. To prepare and train aspiring learners to face campus recruitment by providing them exhaustive
+                  training with relevance to communication skills, aptitude test demeanor, comport and overall
+                  development for personal & professional grooming.
+                  <br>
+                  2. To arrange guest lecture of industrial experts to update and upgrade learners with hands on
+                  experience in the wake of ever changing dimensions of professionalism.
+                  <br>
+                  3. To arrange guest lecture of alumni who are placed in reputed industries to inspire and motivate the
+                  aspiring learners.
+                  <br>
+                  4. To arrange guest lecture on diverse career paths such as Indian Army, Navy, Air FORCE, ONGC, NTPCL,
+                  UPSC, GATE and TOFEL etc.
+                  <br>
+                  5. To make concerted and consistent efforts to enhance employability through campus placements.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-12 col-md-12 col-xl-12" style="margin-top: 5%;">
+            <div class="row">
+              <h2 style="color: #0e1d34; text-align: center;"><b>Training</b></h2>
+              <hr>
+              <div class="col-lg-12 col-md-12 col-xl-12">
+                <div class="row" style="padding-left: 20px;">
+                  <div class="col-lg-8 col-md-8 col-xl-8" data-aos="fade-up" data-aos-delay="500">
+                    <p style="text-align: justify;">
+                    <h4>Training:</h4>
+                    <p
+                      style="border: 1px solid black;border-radius: 10px; padding: 3%; background-color: #1b3762; color: rgb(252, 252, 251);">
+                      Students are placed for practical training in various establishments according to their area of
+                      interest and specialization. Monitoring of training of students in different industries is
+                      conducted by faculty members of respective departments. Analysis of industrial training is carried
+                      out on the basis of evaluation report received from the industries, matter content and
+                      presentation of the training report submitted by the students and viva-voce conducted by the
+                      expert committee, constituted, (discipline wise),for the purpose.</p>
+                    </p>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-xl-4" data-aos="fade-up" data-aos-delay="500">
+                    <img src="/static/assetsv1/img/training.webp" width="80%" style="align-items: center;padding-top:70px"
+                      height="230px">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12 col-md-12 col-xl-12">
+                <div class="row" style="padding-left: 20px;">
+                  <div class="col-lg-8 col-md-8 col-xl-8" data-aos="fade-up" data-aos-delay="500">
+                    <h4>Career Talks / Expert Lecture:</h4>
+                    <p
+                      style="border: 1px solid black;border-radius: 10px; padding: 3%; background-color: #1b3762; color: rgb(252, 252, 251);">
+                      With a view to bridge the gap between industrial requirements and academic curriculum, experts
+                      from the various fields of engineering and management are invited to enable the students to know
+                      and understand the requirements of industries and accordingly prepare themselves for the future.
+                    </p>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-xl-4" data-aos="fade-up" data-aos-delay="500">
+                    <img src="/static/assetsv1/img/carrertalks.jpeg" width="80%" style="align-items: center;padding-top: 50px;"
+                      height="160px">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12 col-md-12 col-xl-12">
+                <div class="row" style="padding-left: 20px;">
+                  <div class="col-lg-8 col-md-8 col-xl-8" data-aos="fade-up" data-aos-delay="500">
+                    <h4>Aptitude Test</h4>
+                    <p
+                      style="border: 1px solid black;border-radius: 10px; padding: 3%; background-color: #1b3762; color: rgb(252, 252, 251);">
+                      For Appearing any company's interview either in campus or off -campus aptitude test is the first
+                      stage. For competitive examinations also there is an aptitude test as a part of the examination.
+                      We conduct practice aptitude test. The syllabus is declared usually 3-4 days before the test &
+                      result is declared immediately.
+                    </p>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-xl-4" data-aos="fade-up" data-aos-delay="500">
+                    <img src="/static/assetsv1/img/aptitudetest.webp" width="80%"
+                      style="align-items: center; padding-top: 50px;" height="170px">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+        </div>
+      </div>
+    </section>
+    <!-- description of placement cell end -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container" data-aos="fade-up">
+        <div class="row" style="color: black;">
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="content">
+              <h3 style="text-align: center;">Why Choose Us?</h3>
+              <p style="text-align: justify;">
+                1. <strong>Unique features:</strong>
+                Our platform offers personalized placement recommendations based on your skills and preferences, saving you time and effort in your search. We also provide a virtual interview practice tool to help you prepare for the application process.
+                <br><br>
+                <br><br>
+                
+                2. <strong>User-friendly interface:</strong>
+                Our website's intuitive search tools and filters make it easy to find placements that match your qualifications and interests. You can also set up notifications to be alerted when new placements become available.
+                <br><br>
+
+              </p>
+              <div class="text-center">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <a href="about.html" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100" style="background-color: #0e1d34;">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row" >
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bi bi-hand-thumbs-up"></i>
+                    <br>
+                    <br>
+                    <br>
+                    <h4 style="color: blanchedalmond;">Unique And Useful Features</h4>
+                    <p>We provide unique Features.</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bi bi-emoji-smile-fill"></i>
+                    <br>
+                    <br>
+                    <br>
+                    <h4 style="color: blanchedalmond;">User-Friendly Nature</h4>
+                    <p>We have user friendly environment.</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bi bi-bullseye"></i>
+                    <br>
+                    <br>
+                    <br>
+                    <h4 style="color: blanchedalmond;">Advanced Skill Assesments</h4>
+                    <p>We take Advanced Skill Test.</p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+          
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-md-6 footer-contact">
+            <h3 style="color: white">Training And Placement CELL </h3>
+            <h5 style="color: white;">Address:- </h5>
+            <p style="color: white;">
+              Dr. D. Y. Patil Institute of Engineering, Management And Research, D. Y. Patil Educational Complex, Sector
+              29, Nigidi Pradhikaran, Akurdi, Pune 411044.
+              <br><br>
+              <strong>Phone:</strong> +91-20-27654470<br><br>
+              <strong>Email:</strong> dyppeca@gmail.com<br><br>
+              <strong> TPO Email:</strong> tpo@dypiemr.ac.in<br>
+            </p>
+          </div>
+
+          <div class="col-lg-6 col-md-6 footer-links">
+            <h3 style="color: white;">Useful Links</h3>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'Homepage'  %}" style="color: white;">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'contact' %}" style="color: white;">Contact Us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'Help' %}" style="color: white;">Help</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>TEAM</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by Team</a>
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="https://twitter.com/DYPIEMR1" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.facebook.com/dypiemrakurdi/" target="_blank" class="facebook"><i
+            class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/dypiemr3/" target="_blank" class="instagram"><i
+            class="bx bxl-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/dypiemr-akurdi-b522771a6/" target="_blank" class="linkedin"><i
+            class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="/static/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="/static/assets/vendor/aos/aos.js"></script>
+  <script src="/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/static/assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="/static/assets/js/main.js"></script>
+
+</body>
+
+</html>

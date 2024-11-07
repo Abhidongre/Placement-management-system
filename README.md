@@ -15,7 +15,7 @@ Welcome to the **Placement Management System** repository! This project is desig
 
 ## About the Project
 
-The Placement Management System is a web-based application that automates the entire placement process, making it efficient and easy to manage. From student registration to company interactions and placement drives, everything is handled seamlessly within this system.
+The Placement Management System is a web-based application. From student registration to company interactions and placement drives, everything is handled seamlessly within this system.
 
 ## Features
 
